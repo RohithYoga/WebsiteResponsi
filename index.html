@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vespa MATIC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="image/logo.jpg" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>VESPA SPRINT</h2>
+                <h1>S 150 ABS</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quod praesentium modi magnam debitis harum quia nulla optio ab, nam eaque!</p>
+                <a href="#">Learn More</a>
+
+                <div class="colour-select">
+                    <h3>Choose Your Colour</h3>
+                    <div class="grey" onclick="imgSlider('image/bg1.png');changeCircleColor('#333')"></div>
+                    <div class="red" onclick="imgSlider('image/bg3.png');changeCircleColor('#B22222')"></div>
+                    <div class="green" onclick="imgSlider('image/bg4.png');changeCircleColor('#747944')"></div>
+                </div>
+            </div>
+
+            <div class="imgBox">
+                <img src="image/bg1.png" class="vespa">
+            </div>
+        </div>
+
+
+        <ul class="sci">
+            <li><a href="#"><img src="image/facebook.png"></a></li>
+            <li><a href="#"><img src="image/twitter.png"></a></li>
+            <li><a href="#"><img src="image/instagram.png"></a></li>
+        </ul>
+
+
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2023 Vespa MATIC. by Rohith Yoga.</p>
+    </footer>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.vespa').src = anything;
+        }
+
+        function changeCircleColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
